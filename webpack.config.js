@@ -6,6 +6,7 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   devtool: "inline-source-map",
   devServer: {
@@ -20,10 +21,16 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: "asset/resource",
+        generator: {
+          outputPath: "images/",
+        },
       },
       {
-        test: /\.(woff|woff2|tff|eot|otf)$/,
+        test: /\.(woff|woff2|ttf|eot|otf)$/,
         type: "asset/resource",
+        generator: {
+          outputPath: "fonts/",
+        },
       },
     ],
   },
