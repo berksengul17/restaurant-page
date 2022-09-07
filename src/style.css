@@ -45,7 +45,12 @@ header {
   text-align: center;
   background: var(--background);
   z-index: 999;
-  padding: 1rem;
+}
+
+.logo {
+  cursor: pointer;
+  width: 100%;
+  max-width: 180px;
 }
 
 /* Move the checkbox away from the screen */
@@ -123,7 +128,7 @@ nav li:focus a {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   opacity: 0;
   transition: opacity 0.15s ease-in-out;
 }
