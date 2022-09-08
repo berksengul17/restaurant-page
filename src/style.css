@@ -37,7 +37,15 @@ body {
   background: url("./images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  /* Disable scroll */
+  overflow: hidden;
 }
+
+/* 
+============
+  NAV BAR
+============
+*/
 
 header {
   position: fixed;
@@ -47,7 +55,7 @@ header {
   z-index: 999;
 }
 
-.logo {
+.logo-link img {
   cursor: pointer;
   width: 100%;
   max-width: 180px;
@@ -146,6 +154,24 @@ nav a:hover {
   transition: opacity 0.25s ease-in-out 0.25s;
 }
 
+.menuIcon {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  width: 200px;
+  transition: scale 0.15s ease-in-out;
+}
+
+.menuIcon:hover {
+  scale: 1.2;
+}
+
+/* 
+==============
+MEDIA QUERIES
+==============
+*/
+
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -156,7 +182,7 @@ nav a:hover {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
-  .logo {
+  .logo-link {
     grid-column: 2 / 3;
   }
 
