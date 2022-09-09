@@ -1,3 +1,3 @@
-import loadPage from "./modules/mainPage.js";
+import loadPage from "./modules/home.js";
 
 loadPage();
