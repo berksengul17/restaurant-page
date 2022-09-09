@@ -24,6 +24,7 @@
   --background: rgba(143, 202, 92, 0.85);
   --focus: #70b237;
   --hover: #477a1e;
+  --menu-dialog: #ff9900;
 }
 
 html,
@@ -154,16 +155,49 @@ nav a:hover {
   transition: opacity 0.25s ease-in-out 0.25s;
 }
 
-.menuIcon {
-  position: absolute;
-  right: 10px;
-  bottom: 0;
+/* MENU ICON */
+
+.menu-container {
+  position: fixed;
+  right: 0;
+  bottom: 200px;
   width: 200px;
-  transition: scale 0.15s ease-in-out;
+  transition: scale 0.2s ease-in-out;
 }
 
-.menuIcon:hover {
-  scale: 1.2;
+.menu-container p {
+  opacity: 0;
+  width: 80px;
+  position: relative;
+  text-align: center;
+  background-color: var(--menu-dialog);
+  color: white;
+  padding: 5px;
+  margin: 10px auto;
+  transition: opacity 0.2s ease-in-out 0.2s;
+}
+
+.menu-container p::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--menu-dialog);
+  left: calc(50% - 5px);
+  rotate: 45deg;
+}
+
+.menu-container img {
+  position: absolute;
+}
+
+.menu-container:hover p {
+  opacity: 1;
+}
+
+.menu-container:hover img {
+  scale: 1.1;
 }
 
 /* 
