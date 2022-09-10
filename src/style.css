@@ -158,21 +158,24 @@ nav a:hover {
 
 .menu-container {
   position: fixed;
+  bottom: 0;
   right: 0;
-  bottom: 200px;
-  width: 200px;
+  width: 10%;
+  min-width: 100px;
+  margin: 0 20px 20px 0;
   transition: scale 0.2s ease-in-out;
 }
 
 .menu-container p {
   opacity: 0;
-  width: 80px;
   position: relative;
   text-align: center;
   background-color: var(--menu-dialog);
   color: white;
-  padding: 5px;
-  margin: 10px auto;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+  padding: 5px 10px;
+  box-shadow: 5px 5px 5px #362102;
   transition: opacity 0.2s ease-in-out 0.2s;
 }
 
@@ -182,13 +185,13 @@ nav a:hover {
   bottom: -5px;
   width: 10px;
   height: 10px;
+  rotate: 45deg;
   background-color: var(--menu-dialog);
   left: calc(50% - 5px);
-  rotate: 45deg;
 }
 
 .menu-container img {
-  position: absolute;
+  width: 100%;
 }
 
 .menu-container:hover p {
