@@ -1,6 +1,6 @@
 import "../style.css";
 import logo from "../images/logo.png";
-import menuIcon from "../images/goldenapple.png";
+import menuIcon from "../images/goldenApple.gif";
 
 function createCheckBox(id, cl) {
   const checkBox = document.createElement("input");
@@ -65,7 +65,6 @@ function createMenuContainer() {
   para.textContent = "MENU";
 
   container.classList.add("menu-container");
-  myIcon.classList.add("menuIcon");
 
   container.appendChild(para);
   container.appendChild(myIcon);
