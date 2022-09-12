@@ -1,0 +1,51 @@
+/* MENU ICON */
+
+.menu-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  min-width: 100px;
+  margin: 0 20px 20px 0;
+  transition: scale 0.2s ease-in-out;
+}
+
+.menu-container p {
+  opacity: 0;
+  position: relative;
+  text-align: center;
+  background-color: var(--menu-dialog);
+  color: white;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+  padding: 5px 10px;
+  box-shadow: 5px 5px 5px #362102;
+  transition: opacity 0.2s ease-in-out 0.2s;
+}
+
+.menu-container p::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  rotate: 45deg;
+  background-color: var(--menu-dialog);
+  left: calc(50% - 5px);
+}
+
+.menu-container img {
+  width: 100%;
+}
+
+.menu-container:hover p {
+  opacity: 1;
+}
+
+.menu-container:hover img {
+  scale: 1.1;
+}
+
+.menu-container:active img {
+  scale: 1;
+}
