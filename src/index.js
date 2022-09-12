@@ -1,3 +1,39 @@
-import loadPage from "./modules/home.js";
+import "./styles/common.css";
 
-loadPage();
+import home from "./modules/home.js";
+import menu from "./modules/menu.js";
+import about from "./modules/about.js";
+import contact from "./modules/contact.js";
+import reset from "./modules/reset.js";
+import header from "./modules/header.js";
+
+// Initial page load
+
+header();
+home();
+
+const homeBtn = document.querySelector(".logo-link");
+const aboutBtn = document.querySelector(".about-link");
+const contactBtn = document.querySelector(".contact-link");
+const menuBtn = document.querySelector(".menu-container");
+
+homeBtn.addEventListener("click", () => {
+  reset();
+  home();
+});
+
+menuBtn.addEventListener("click", () => {
+  reset();
+  menu();
+  console.log("event triggered");
+});
+
+aboutBtn.addEventListener("click", () => {
+  reset();
+  about();
+});
+
+contactBtn.addEventListener("click", () => {
+  reset();
+  contact();
+});
