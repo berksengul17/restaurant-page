@@ -3,8 +3,8 @@ const reset = () => {
   content.style = "";
 
   let lastChild = content.lastElementChild;
-  // While the last child is not the header remove the child
-  while (lastChild != content.children[0]) {
+  // Remove all children expect the first two(header and .menu-container)
+  while (lastChild != content.children[1]) {
     content.removeChild(lastChild);
     lastChild = content.lastElementChild;
   }
