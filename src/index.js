@@ -6,11 +6,11 @@ import about from "./modules/about.js";
 import contact from "./modules/contact.js";
 import reset from "./modules/reset.js";
 import header from "./modules/header.js";
+import menuIcon from "./modules/menuIcon.js";
 
 // Initial page load
-
 header();
-home();
+menuIcon();
 
 const homeBtn = document.querySelector(".logo-link");
 const aboutBtn = document.querySelector(".about-link");
