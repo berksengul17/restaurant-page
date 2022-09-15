@@ -1,7 +1,83 @@
-.menu-p {
-  font-size: 60px;
-  color: white;
+:root {
+  --border-background: rgb(139, 139, 139);
+  --border-color-dark: rgb(55, 55, 55);
+  --border-color-light: rgb(255, 255, 255);
+}
+
+#content {
+  height: 100%;
   display: flex;
   justify-content: center;
+  overflow-y: auto;
+}
+
+/* Header uses the 10% of the height so the
+container uses the remaining height which is 90%
+*/
+.food-container {
+  align-self: flex-end;
+  height: 90%;
+  width: 100%;
+  display: grid;
   align-items: center;
+  justify-content: space-around;
+  gap: 20px 10px;
+}
+
+.food {
+  display: flex;
+  color: white;
+  background-color: var(--border-background);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.food-img {
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+  padding: 8px;
+  background-color: var(--border-background);
+  border: 6px solid;
+  border-top-color: var(--border-color-dark);
+  border-left-color: var(--border-color-dark);
+  border-bottom-color: var(--border-color-light);
+  border-right-color: var(--border-color-light);
+}
+
+.food:hover .food-img {
+  scale: 1.2;
+}
+
+.text h3 {
+  font-size: 1.8em;
+}
+
+.text p {
+  font-size: 1.2em;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.6em;
+}
+
+.price img {
+  width: 50px;
+  height: 100%;
+}
+
+/* Move every third grid item to the first column
+so that the column size is fixed to 2*/
+@media screen and (min-width: 700px) {
+  .food-container {
+    grid-auto-flow: column;
+  }
+
+  .food:nth-child(2n + 1) {
+    grid-column: 1;
+  }
 }
