@@ -21,10 +21,14 @@
 }
 
 :root {
-  --background: rgba(143, 202, 92, 0.85);
+  --background: rgb(143, 202, 92, 0.85);
+  --background-solid: rgb(143, 202, 92);
   --focus: #70b237;
   --hover: #477a1e;
   --menu-dialog: #ff9900;
+  --border-background: rgb(139, 139, 139);
+  --border-color-dark: rgb(55, 55, 55);
+  --border-color-light: rgb(255, 255, 255);
 }
 
 html,
@@ -38,5 +42,12 @@ body {
   background-size: cover;
   font-family: "Silkscreen", sans-serif;
   /* Disable scroll */
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
 }
