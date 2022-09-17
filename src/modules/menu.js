@@ -21,6 +21,7 @@ function loadMenu() {
 
   const foodContainer = document.createElement("div");
   foodContainer.classList.add("food-container");
+  foodContainer.classList.add("page-load");
 
   // APPLE
   const appleContainer = document.createElement("div");

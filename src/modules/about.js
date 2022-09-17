@@ -12,6 +12,7 @@ function loadAbout() {
   const about = document.createElement("p");
 
   aboutContainer.classList.add("about-container");
+  aboutContainer.classList.add("page-load");
   title.classList.add("about-title");
   about.classList.add("about-text");
 
