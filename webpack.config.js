@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.js",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "MC Restaurant",
+      title: "CAFE MC",
       favicon: "./src/images/icon.ico",
       template: "./src/index.html",
     }),
