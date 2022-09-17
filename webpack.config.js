@@ -8,6 +8,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "MC Restaurant",
+      favicon: "./src/images/icon.ico",
       template: "./src/index.html",
     }),
     new MiniCssExtractPlugin(),
