@@ -12,6 +12,16 @@
   font-weight: 700;
 }
 
+@keyframes pageLoad {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -29,6 +39,7 @@
   --border-background: rgb(139, 139, 139);
   --border-color-dark: rgb(55, 55, 55);
   --border-color-light: rgb(255, 255, 255);
+  --load-animation: pageLoad 1.5s ease-in-out;
 }
 
 html,
@@ -50,4 +61,8 @@ body {
   display: flex;
   justify-content: center;
   overflow-y: auto;
+}
+
+.page-load {
+  animation: var(--load-animation);
 }
