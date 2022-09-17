@@ -9,6 +9,7 @@ container uses the remaining height which is 90%
   align-items: center;
   justify-content: space-around;
   gap: 20px 10px;
+  padding: 10px;
 }
 
 .food {
