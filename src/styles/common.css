@@ -40,6 +40,7 @@
   --border-color-dark: rgb(55, 55, 55);
   --border-color-light: rgb(255, 255, 255);
   --load-animation: pageLoad 1.5s ease-in-out;
+  --container-padding: 10px;
 }
 
 html,
@@ -58,6 +59,7 @@ body {
   height: 100%;
   display: flex;
   flex-flow: column;
+  overflow-x: hidden;
 }
 
 .page-load {
