@@ -25,7 +25,6 @@ homeBtn.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
   reset();
   menu();
-  console.log("event triggered");
 });
 
 aboutBtn.addEventListener("click", () => {
