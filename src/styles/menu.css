@@ -3,13 +3,14 @@ container uses the remaining height which is 90%
 */
 .food-container {
   align-self: flex-end;
-  height: 90%;
+  flex: 1;
   width: 100%;
   display: grid;
   align-items: center;
   justify-content: space-around;
   gap: 20px 10px;
   padding: 10px;
+  overflow-y: auto;
 }
 
 .food {

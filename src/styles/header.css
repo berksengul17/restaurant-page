@@ -5,8 +5,7 @@ NAV BAR
 */
 
 header {
-  position: fixed;
-  height: 10%;
+  position: relative;
   width: 100%;
   text-align: center;
   background-color: var(--background);

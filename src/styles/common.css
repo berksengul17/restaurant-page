@@ -52,15 +52,12 @@ body {
   background: url("../images/background.jpg") no-repeat center fixed;
   background-size: cover;
   font-family: "Silkscreen", sans-serif;
-  /* Disable scroll */
-  /* overflow: hidden; */
 }
 
 #content {
   height: 100%;
   display: flex;
-  justify-content: center;
-  overflow-y: auto;
+  flex-flow: column;
 }
 
 .page-load {
